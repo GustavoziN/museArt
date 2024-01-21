@@ -1,0 +1,155 @@
+.headerContainer {
+    position: relative;
+    padding: 15px 30px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 98px;
+    color: #FFF;
+    font-family: 'Krub', sans-serif;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.headerLinks {
+    padding: 30px;
+    display: flex;
+    list-style: none;
+}
+
+
+.cfgLi {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.containerPerfil {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.iconsMenu {
+    width: 100%;
+    max-width: 980px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* menu mobile */
+
+.containerMenuMobal {
+    display: none;
+}
+
+
+.iconsMenuMobal {
+    display: none;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media(max-width: 540px) {
+    .headerContainer {
+        background: #000;
+        width: 100%;
+        height: 80px;
+    }
+
+    .iconsMenu {
+        display: none;
+    }
+
+    .containerMenuMobal {
+        display: flex;
+        list-style: none;
+    }
+
+    .showMenu {
+        position: absolute;
+        z-index: 10;
+        right: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 274px;
+        background-color: #000;
+        width: 200px;
+    }
+
+    .hideMenu {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .iconsMenuMobal {
+        display: flex;
+        align-items: center;
+        margin: 10px 0px;
+    }
+
+    .iconsMenuMobal img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .iconsMenuMobal span {
+        cursor: pointer;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    .showMenu {
+        position: absolute;
+        z-index: 10;
+        left: 10%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 274px;
+        background-color: #000;
+        width: 200px;
+    }
+}
+
+@media (max-width: 375px) {
+    .showMenu {
+        position: absolute;
+        z-index: 10;
+        left: 15%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 274px;
+        background-color: #000;
+        width: 200px;
+    }
+}
+
+@media(max-width: 430px) {
+    .logo {
+        display: none;
+    }
+
+    .iconsMenuMobal {
+        display: flex;
+        align-items: center;
+        margin: 10px 0px;
+    }
+
+    .iconsMenuMobal img {
+        width: 50px;
+        height: 50px;
+    }
+
+    
+}
+
